@@ -1,7 +1,9 @@
 # pixLayout
 ![Model pixLayout](img/model.png)
 
-**pixLayout - is a jQuery plugin for per-pixel layout**
+**[pixLayout](http://pixlayout.polycreative.ru) - is a jQuery plugin for per-pixel layout**
+
+**[DEMO](http://pixlayout.polycreative.ru/test.html)**
 
 While websites layouting an exact resemblance with model is required. Sometimes this is required by customer, sometimes by superior, and sometimes you want strictly fit the design, but moreover, sometimes per-pixel equivalence is a necessary thing. pixLayout was created to facilitate maximally the work of the pixel layout designer and measuring distances and margins. pixLayout is a picture-layer, which can be managed by the panel at the top right corner of the document window, hotkeys, or just by moving it with the mouse. At any time, the panel can be hidden or completely liquidate the whole html and css of the plugin. For dynamic layout adjusting is very convenient to use the Developer Tools in Chrome or FireBug in Firefox.
 
@@ -49,8 +51,8 @@ fixed |	boolean |	true or false |	picture position is fixed or not
 show | boolean |	true or false |	show the picture when loading or not
 
 ### Context:
-You can specify any element on the page as the context and the picture-layer will add to the end of this element. By default, such an element is body. Context is specified as the second parameter.
-Example:
+You can specify any element on the page as the context and the picture-layer will add to the end of this element. By default, such an element is body. Context is specified as the second parameter.<br/>
+**Example:**
 ```
 $.pixlayout("img/picture.png", "div.wrapper");
 ```
@@ -68,6 +70,7 @@ $.pixlayout("img/picture.png", "div.wrapper");
 5. Show/hide the picture – the center button of the navigation bar or shift+e
 
 ### Versions:
+----
 **0.9.7 (2012-10-11)**
 * we’ve added property “previous” that makes the layer picture flow-through (this function is not supported in IE<9)
 * the design of the checkboxes has been changed
