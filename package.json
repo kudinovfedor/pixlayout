@@ -1,0 +1,19 @@
+{
+  "name": "jquery.pixlayout",
+  "version": "0.9.7",
+  "description": "pixLayout - is a jQuery plugin for per-pixel layout",
+  "main": "js/jquery.pixlayout.0.9.7.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kudinovfedor/pixlayout.git"
+  },
+  "author": "Anton Karabut",
+  "bugs": {
+    "url": "https://github.com/kudinovfedor/pixlayout/issues"
+  },
+  "homepage": "http://pixlayout.polycreative.ru",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}

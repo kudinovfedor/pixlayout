@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+  <script type="text/javascript" src="js/gear.js"></script>
+  <title>pixLayout - пиксель в пиксель</title>
+</head>
+<body>
+<div class="bg"></div>
+<div class="wrap">
+  <header>
+    <div class="header">
+      <a href="/" class="logo"></a>
+
+      <div class="language" data-lang="ru">ru</div>
+    </div>
+  </header>
+  <section>
+    <div class="section">
+      <div class="download_shine"></div>
+      <a href="js/jquery.pixlayout.0.9.7.js" class="download_button fr"></a>
+
+      <div class="block w750 h200 fl" id="intro">
+        <h1>pixLayout – is a jQuery plugin for per-pixel layout</h1>
+
+        <p>
+          While websites layouting an exact resemblance with model is required. Sometimes this is required by customer,
+          sometimes by superior, and sometimes you want strictly fit the design, but moreover, sometimes per-pixel
+          equivalence is a necessary thing.<br> pixLayout was created to facilitate maximally the work of the pixel
+          layout designer and measuring distances and margins.<br> pixLayout is a picture-layer, which can be managed by
+          the panel at the top right corner of the document window, hotkeys, or just by moving it with the mouse. At any
+          time, the panel can be hidden or completely liquidate the whole html and css of the plugin.<br> For dynamic
+          layout adjusting is very convenient to use the Developer Tools in Chrome or FireBug in Firefox.
+        </p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <section>
+    <div class="section">
+      <div class="video fr">
+        <iframe width="560" height="333" src="http://www.youtube.com/embed/QSpp4i-Ic7k" frameborder="0"
+                allowfullscreen=""></iframe>
+      </div>
+      <div class="model fl"></div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <section>
+    <div class="section">
+      <div class="block w1000 h200 fl" id="advantage">
+        <h1>Pixlayout advantages over other similar plug-ins and add-ons:</h1>
+        <ol class="bold">
+          <li>Not only works in one browser. <span>As pixLayout is a javascript-code it’s enough to include it to head and it will work in all supported browsers. After the end of layout you can merely disconnect the plugin.</span>
+          </li>
+          <li>Functionality. <span>Plugin provides all necessary functions and settings for convenient picture-layer control.</span>
+          </li>
+          <li>Crossbrowsering and crossversioning. <span>pixLayout works in browsers chrome5+, opera 11+, firefox 3,6+, IE 7+, as well as on all versions of jQuery beginning from the 1.3.2.</span>
+          </li>
+          <li>All in one file. <span>In contrast to many plugins, which include besides js-code, and even style files, and frequently  pictures, pixLayout consists of a single file in which all the components are already embedded.</span>
+          </li>
+          <li>Free of charge and permanent project development. <span>Plugin is spreaded absolutely free under license GPL 2 and constantly evolves. </span>
+          </li>
+        </ol>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <section>
+    <div class="section">
+      <div class="block w475 h450  fr" id="changelog">
+        <div class="float_link">full (rus) <a href="dev/changelog.txt" target="_blank">changelog.txt</a>
+        </div>
+        <h1>Versions:</h1>
+        <b>0.9.7 (2012-10-11)</b>
+        <ul>
+          <li>we’ve added property “previous” that makes the layer picture flow-through (this function is not supported
+            in IE&lt;9)
+          </li>
+          <li>the design of the checkboxes has been changed</li>
+          <li>the option of value change of inputs during scrolling has been added</li>
+          <li>the bug with the recall of methods during dynamical change of src picture has been fixed</li>
+        </ul>
+        <br>
+        <b>0.9.6 (2012-09-23)</b>
+        <ul>
+          <li>compressed version is added</li>
+          <li>context is added</li>
+          <li>syntax is fixed</li>
+          <li>the bug is fixed, when the image size reseted to zero while moving it in a hidden form</li>
+          <li>the bug is fixed with inability to align while image creating</li>
+        </ul>
+        <br>
+        <b>0.9.5 (2012-08-07)</b>
+        <ul>
+          <li>shift+e now works even if the picture does not exist yet</li>
+          <li>some layout bugs are fixed</li>
+          <li>the bug of inability to show the picture is fixed, if at the time of the call it was not loaded</li>
+          <li>the bug with NaN options left and right when loading is fixed</li>
+          <li>new 'show' parameter which allows to show image-layer immediately is added</li>
+        </ul>
+      </div>
+      <div class="block w475 h450  fl">
+        <div class="lang_wrap" id="start_1">
+          <h1>How to start?</h1>
+
+          <p>
+            Download:<br>
+            <a href="js/jquery.pixlayout.0.9.7.js">jQuery.pixlayout v. 0.9.7</a><br>
+            <a href="js/jquery.pixlayout.0.9.7.min.js">jQuery.pixlayout v. 0.9.7 min</a><br>
+            <a href="js/jquery.pixlayout.0.9.7.pack.js">jQuery.pixlayout v. 0.9.7 pack</a>
+          </p>
+        </div>
+        <p>
+        </p>
+        <pre>
+          &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript" src="jquery.pixlayout.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript"&gt;
+            $(function(){
+              $.pixlayout("/path_to_picture/picture.ext");
+            });
+          &lt;/script&gt;
+        </pre>
+        <p></p>
+
+        <h1 class="lang_wrap" id="start_2">Some parameters transmission and context example:</h1>
+
+        <p>
+        </p>
+        <pre>
+          $(function(){
+            $.pixlayout({
+              src: "/img/layout.jpg",
+              opacity: 0.8,
+              top: 50,
+              center: true,
+              clip: true,
+              show: true
+            }, ".wrapper");
+          });
+        </pre>
+        <p></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <section>
+    <div class="section" id="table">
+      <table class="parameters">
+        <tbody>
+        <tr>
+          <th class="number">№</th>
+          <th class="param">Parameter</th>
+          <th class="type">Type</th>
+          <th class="values">Possible values</th>
+          <th class="descr">Description</th>
+        </tr>
+        <tr class="odd">
+          <td>1.</td>
+          <td>src</td>
+          <td>string</td>
+          <td>way to the picture-layer</td>
+          <td>way to the picture-layer</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>opacity</td>
+          <td>float</td>
+          <td>0.0 - 1.0</td>
+          <td>opacity</td>
+        </tr>
+        <tr class="odd">
+          <td>3.</td>
+          <td>step</td>
+          <td>integer</td>
+          <td>from 1 to infinity</td>
+          <td>step moving image in pixels</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>top, left, right</td>
+          <td>integer</td>
+          <td>from 1 to infinity</td>
+          <td>indention in pixels</td>
+        </tr>
+        <tr class="odd">
+          <td>5.</td>
+          <td>zindex</td>
+          <td>integer</td>
+          <td>from 1 to infinity</td>
+          <td>picture-layer location on the axis z</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>clip</td>
+          <td>boolean</td>
+          <td>true or false</td>
+          <td>panel fixed or not</td>
+        </tr>
+        <tr class="odd">
+          <td>7.</td>
+          <td>center</td>
+          <td>boolean</td>
+          <td>true or false</td>
+          <td>picture in the center or not</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td>fixed</td>
+          <td>boolean</td>
+          <td>true or false</td>
+          <td>picture position is fixed or not</td>
+        </tr>
+        <tr class="odd">
+          <td>9.</td>
+          <td>show</td>
+          <td>boolean</td>
+          <td>true or false</td>
+          <td>show the picture when loading or not</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section>
+    <div class="section">
+      <div class="block w1000 h400 fl">
+        <div class="lang_wrap" id="context_1">
+          <h1>Context:</h1>
+
+          <p>
+            You can specify any element on the page as the context and the picture-layer will add to the end of this
+            element. By default, such an element is body. <br>
+            Context is specified as the second parameter.<br>
+            Например:
+          </p>
+        </div>
+						<pre>
+              $.pixlayout("img/picture.png", "div.wrapper");
+						</pre>
+        <div class="lang_wrap" id="context_2">
+          <h1>Displacement:</h1>
+          <ol>
+            <li>buttons:'left', 'right', 'down'</li>
+            <li>buttons:w,a,s,d, when the picture is visible</li>
+            <li>navigation buttons</li>
+          </ol>
+          <h1>Operations:</h1>
+          <ol>
+            <li>Destroy (remove all html and css code pixLayout from the page) – the 'x' in the upper right corner.</li>
+            <li>Secure the panel – the icon in the upper right corner of the panel</li>
+            <li>Quick reference: the question mark in the upper right corner of the panel</li>
+            <li>To roll up settings – arrow 'up' downwards of the panel</li>
+            <li>Show/hide the picture – the center button of the navigation bar or shift+e</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <footer>
+    <div class="footer" id="contacts">
+      Contacts: <a href="mailto:poly@polycreative.ru">e-mail</a>, <a href="http://vk.com/polyembrion">vk</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
