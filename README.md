@@ -14,6 +14,16 @@ While websites layouting an exact resemblance with model is required. Sometimes 
 4. **All in one file.** In contrast to many plugins, which include besides js-code, and even style files, and frequently  pictures, pixLayout consists of a single file in which all the components are already embedded.
 5. **Free of charge and permanent project development.** Plugin is spreaded absolutely free under license GPL 2 and constantly evolves.
 
+### Bower
+```
+# registered package
+$ bower install --save pixlayout
+# GitHub shorthand
+$ bower install --save kudinovfedor/pixlayout
+# Git endpoint
+$ bower install --save git://github.com/kudinovfedor/pixlayout.git
+```
+
 ### How to start?
 ```
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
