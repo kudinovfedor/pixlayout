@@ -22,7 +22,7 @@ a:active {
   top: 1px;
 }
 
-div.bg {
+.bg {
   width: 100%;
   height: 100%;
   background: url('../img/bg.gif');
@@ -30,7 +30,7 @@ div.bg {
   z-index: 0;
 }
 
-div.wrap {
+.wrap {
   position: relative;
   width: 1000px;
   height: auto;
@@ -45,7 +45,7 @@ div.wrap {
   position: relative;
 }
 
-a.logo {
+.logo {
   display: block;
   width: 257px;
   height: 59px;
@@ -81,7 +81,7 @@ a.logo {
   right: 8px;
 }
 
-div.download_shine {
+.download_shine {
   background: url('../img/button_download_shine.png') no-repeat;
   width: 304px;
   height: 309px;
@@ -91,7 +91,7 @@ div.download_shine {
   z-index: -1;
 }
 
-a.download_button {
+.download_button {
   display: block;
   background: url('../img/button_download.png') no-repeat;
   cursor: pointer;
@@ -101,7 +101,7 @@ a.download_button {
   margin-top: -2px;
 }
 
-div.model_shine {
+.model_shine {
   width: 585px;
   height: 585px;
   background: url('../img/model_shine.png') no-repeat;
@@ -111,18 +111,18 @@ div.model_shine {
   z-index: -1;
 }
 
-div.model {
+.model {
   width: 400px;
   height: 400px;
   background: url('../img/model.png') 0 5px no-repeat;
 }
 
-div.model.ru {
+.model.ru {
   background: url('../img/model_ru.png') 0 5px no-repeat;
   width: 300px;
 }
 
-div.video {
+.video {
   margin-top: 58px;
 }
 
@@ -162,11 +162,11 @@ div.video {
   margin-left: 8px;
 }
 
-.block ol.bold {
+.block .bold {
   font-weight: bold;
 }
 
-.block ol.bold span {
+.block .bold span {
   color: #111;
   font-weight: normal;
   margin-left: 0;
@@ -212,7 +212,7 @@ div.video {
   width: 100%
 }
 
-.parameters tr.odd td {
+.parameters .odd td {
   background: url('../img/bg_cont.png');
 }
 
@@ -222,19 +222,19 @@ div.video {
   text-align: left;
 }
 
-.parameters th.number {
+.parameters .number {
   width: 21px;
 }
 
-.parameters th.param {
+.parameters .param {
   width: 200px;
 }
 
-.parameters th.type {
+.parameters .type {
   width: 50px;
 }
 
-.parameters th.values {
+.parameters .values {
   width: 150px;
 }
 
@@ -252,7 +252,7 @@ div.video {
 }
 
 /* test */
-img.test {
+.test {
   position: relative;
   display: block;
   top: 150px;

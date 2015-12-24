@@ -1,5 +1,5 @@
 # pixLayout
-![Model pixLayout](img/model.png)
+![Model pixLayout](demo/img/model.png)
 
 **[pixLayout](http://pixlayout.polycreative.ru) - is a jQuery plugin for per-pixel layout**
 
@@ -68,25 +68,3 @@ $.pixlayout("img/picture.png", "div.wrapper");
 3. Quick reference: the question mark in the upper right corner of the panel
 4. To roll up settings – arrow 'up' downwards of the panel
 5. Show/hide the picture – the center button of the navigation bar or shift+e
-
-### Versions:
-----
-**0.9.7 (2012-10-11)**
-* we’ve added property “previous” that makes the layer picture flow-through (this function is not supported in IE<9)
-* the design of the checkboxes has been changed
-* the option of value change of inputs during scrolling has been added
-* the bug with the recall of methods during dynamical change of src picture has been fixed
-
-**0.9.6 (2012-09-23)**
-* compressed version is added
-* context is added
-* syntax is fixed
-* the bug is fixed, when the image size reseted to zero while moving it in a hidden form
-* the bug is fixed with inability to align while image creating
-
-**0.9.5 (2012-08-07)**
-* shift+e now works even if the picture does not exist yet
-* some layout bugs are fixed
-* the bug of inability to show the picture is fixed, if at the time of the call it was not loaded
-* the bug with NaN options left and right when loading is fixed
-* new 'show' parameter which allows to show image-layer immediately is added
