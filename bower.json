@@ -1,0 +1,30 @@
+{
+  "name": "pixlayout",
+  "version": "0.9.7",
+  "description": "pixLayout - is a jQuery plugin for per-pixel layout",
+  "main": [
+    "jquery.pixlayout.min.js"
+  ],
+  "authors": [
+    "Anton Karabut"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "jquery",
+    "javascript",
+    "pixLayout",
+    "Pixel-perfect",
+    "pixel",
+    "plugin"
+  ],
+  "homepage": "https://github.com/kudinovfedor/pixlayout",
+  "ignore": [
+    "**/.*",
+    "demo",
+    "bower_components",
+    "node_modules",
+    "*.md",
+    "gulpfile.js",
+    "package.json"
+  ]
+}
