@@ -1,5 +1,5 @@
 {
-  "name": "jquery.pixlayout",
+  "name": "pixlayout",
   "version": "0.9.7",
   "description": "pixLayout - is a jQuery plugin for per-pixel layout",
   "main": "gulpfile.js",
@@ -22,5 +22,10 @@
   "devDependencies": {
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.1"
-  }
+  },
+  "keywords": [
+    "pixLayout",
+    "Pixel-perfect",
+    "pixel"
+  ]
 }
