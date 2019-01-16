@@ -111,34 +111,28 @@
             <a href="js/jquery.pixlayout.min.js">jQuery.pixlayout v. 0.9.8 pack</a>
           </p>
         </div>
-        <p>
-        </p>
         <pre>
-          &ltscript type="text/javascript" src="jquery.js"&gt&lt/script&gt
-          &ltscript type="text/javascript" src="jquery.pixlayout.js"&gt&lt/script&gt
-          &ltscript type="text/javascript"&gt
-              $(function(){
-                  $.pixlayout("/path_to_picture/picture.ext");
-              });
-          &lt/script&gt
+&ltscript type="text/javascript" src="jquery.js"&gt&lt/script&gt
+&ltscript type="text/javascript" src="jquery.pixlayout.js"&gt&lt/script&gt
+&ltscript type="text/javascript"&gt
+    $(function(){
+        $.pixlayout("/path_to_picture/picture.ext");
+    });
+&lt/script&gt
         </pre>
-        <p></p>
         <h1 class="lang_wrap" id="start_2">Some parameters transmission and context example:</h1>
-        <p>
-        </p>
         <pre>
-          $(function(){
-            $.pixlayout({
-              src: "/img/layout.jpg",
-              opacity: 0.8,
-              top: 50,
-              center: true,
-              clip: true,
-              show: true
-            }, ".wrapper");
-          });
+$(function(){
+  $.pixlayout({
+    src: "/img/layout.jpg",
+    opacity: 0.8,
+    top: 50,
+    center: true,
+    clip: true,
+    show: true
+  }, ".wrapper");
+});
         </pre>
-        <p></p>
       </div>
       <div class="clear"></div>
     </div>
@@ -231,9 +225,7 @@
             Example:
           </p>
         </div>
-        <pre>
-          $.pixlayout("img/picture.png", "div.wrapper");
-        </pre>
+        <pre>$.pixlayout("img/picture.png", "div.wrapper");</pre>
         <div class="lang_wrap" id="context_2">
           <h1>Displacement:</h1>
           <ol>
