@@ -7,7 +7,7 @@ import uglify from 'gulp-uglify';
 gulp.task('js', () => {
     return gulp.src('jquery.pixlayout.js')
         .pipe(uglify())
-        .pipe(rename('jquery.pixlayout.min.js'))
+        .pipe(rename({suffix: ".min"}))
         .pipe(gulp.dest('./'));
 });
 

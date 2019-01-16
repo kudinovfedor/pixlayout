@@ -1,6 +1,6 @@
 {
   "name": "pixlayout",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "description": "pixLayout - is a jQuery plugin for per-pixel layout",
   "main": [
     "jquery.pixlayout.min.js"

@@ -1,6 +1,6 @@
 $(function () {
 
-  $(window).load(function () {
+  $(window).on('load', function () {
     $(".wrap").css("minHeight", $(window).height() + 1);
     var sect = $(".section");
     var i = 0;
@@ -12,7 +12,7 @@ $(function () {
     }, 400);
   });
   $(".parameters tr:odd").addClass("odd");
-  $(".language").click(function () {
+  $(".language").on('click', function () {
     var lang = $(this).data("lang");
     var a_lang = "en";
     if (lang === "en") {
@@ -25,10 +25,10 @@ $(function () {
     $.ajax({
       url: 'js/lang_' + lang + '.json',
       dataType: "json",
-      scriptCharset: "windows-1251",
-      contentType: "application/x-www-form-urlencoded; charset=windows-1251",
+      scriptCharset: "utf-8",
+      contentType: "application/x-www-form-urlencoded; charset=UTF-8",
       beforeSend: function (xhr) {
-        xhr.overrideMimeType("text/plain; charset=windows-1251");
+        xhr.overrideMimeType("text/plain; charset=UTF-8");
       },
       success: function (data) {
         $.each(data, function (key, val) {

@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery.pixlayout.js"></script>
   <script type="text/javascript" src="js/gear.js"></script>
   <title>pixLayout - perfect pixel by pixel</title>
 </head>
@@ -22,9 +22,9 @@
   <section>
     <div class="section">
       <div class="download_shine"></div>
-      <a href="js/jquery.pixlayout.0.9.7.js" class="download_button fr"></a>
+      <a href="js/jquery.pixlayout.js" class="download_button fr"></a>
       <div class="block w750 h200 fl" id="intro">
-        <h1>pixLayout – is a jQuery plugin for per-pixel layout</h1>
+        <h1>pixLayout — is a jQuery plugin for per-pixel layout</h1>
         <p>
           While websites layouting an exact resemblance with model is required. Sometimes this is required by customer,
           sometimes by superior, and sometimes you want strictly fit the design, but moreover, sometimes per-pixel
@@ -41,7 +41,7 @@
   <section>
     <div class="section">
       <div class="video fr">
-        <iframe width="560" height="333" src="http://www.youtube.com/embed/QSpp4i-Ic7k" frameborder="0" allowfullscreen=""></iframe>
+        <iframe width="560" height="333" src="http://www.youtube.com/embed/QSpp4i-Ic7k" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="model fl"></div>
       <div class="clear"></div>
@@ -52,7 +52,7 @@
       <div class="block w1000 h200 fl" id="advantage">
         <h1>Pixlayout advantages over other similar plug-ins and add-ons:</h1>
         <ol class="bold">
-          <li>Not only works in one browser. <span>As pixLayout is a javascript-code it’s enough to include it to head and it will work in all supported browsers. After the end of layout you can merely disconnect the plugin.</span>
+          <li>Not only works in one browser. <span>As pixLayout is a javascript-code it's enough to include it to head and it will work in all supported browsers. After the end of layout you can merely disconnect the plugin.</span>
           </li>
           <li>Functionality. <span>Plugin provides all necessary functions and settings for convenient picture-layer control.</span>
           </li>
@@ -71,11 +71,14 @@
     <div class="section">
       <div class="block w475 h450  fr" id="changelog">
         <h1>Versions:</h1>
+        <b>0.9.8 (2016-10-18)</b>
+        <ul>
+          <li>jQuery 2.x and 3.x is now supported</li>
+          <li>jQuery below version 1.7 is no longer supported. If you need to support older versions, use <a href="https://github.com/kudinovfedor/pixlayout/tree/v0.9.7" target="_blank">pixLayout ver. 0.9.7</a></li>
+        </ul>
         <b>0.9.7 (2012-10-11)</b>
         <ul>
-          <li>we’ve added property “previous” that makes the layer picture flow-through (this function is not supported
-            in IE&lt;9)
-          </li>
+          <li>we've added property 'previous' that makes the layer picture flow-through (this function is not supported in IE<9)</li>
           <li>the design of the checkboxes has been changed</li>
           <li>the option of value change of inputs during scrolling has been added</li>
           <li>the bug with the recall of methods during dynamical change of src picture has been fixed</li>
@@ -104,20 +107,20 @@
           <h1>How to start?</h1>
           <p>
             Download:<br>
-            <a href="js/jquery.pixlayout.0.9.7.js">jQuery.pixlayout v. 0.9.7</a><br>
-            <a href="js/jquery.pixlayout.0.9.7.min.js">jQuery.pixlayout v. 0.9.7 min</a>
+            <a href="js/jquery.pixlayout.js">jQuery.pixlayout v. 0.9.8</a><br />
+            <a href="js/jquery.pixlayout.min.js">jQuery.pixlayout v. 0.9.8 pack</a>
           </p>
         </div>
         <p>
         </p>
         <pre>
-          &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
-          &lt;script type="text/javascript" src="jquery.pixlayout.js"&gt;&lt;/script&gt;
-          &lt;script type="text/javascript"&gt;
-            $(function(){
-              $.pixlayout("/path_to_picture/picture.ext");
-            });
-          &lt;/script&gt;
+          &ltscript type="text/javascript" src="jquery.js"&gt&lt/script&gt
+          &ltscript type="text/javascript" src="jquery.pixlayout.js"&gt&lt/script&gt
+          &ltscript type="text/javascript"&gt
+              $(function(){
+                  $.pixlayout("/path_to_picture/picture.ext");
+              });
+          &lt/script&gt
         </pre>
         <p></p>
         <h1 class="lang_wrap" id="start_2">Some parameters transmission and context example:</h1>
@@ -143,7 +146,6 @@
   <section>
     <div class="section" id="table">
       <table class="parameters">
-        <tbody>
         <tr>
           <th class="number">№</th>
           <th class="param">Parameter</th>
@@ -151,7 +153,7 @@
           <th class="values">Possible values</th>
           <th class="descr">Description</th>
         </tr>
-        <tr class="odd">
+        <tr>
           <td>1.</td>
           <td>src</td>
           <td>string</td>
@@ -165,7 +167,7 @@
           <td>0.0 - 1.0</td>
           <td>opacity</td>
         </tr>
-        <tr class="odd">
+        <tr>
           <td>3.</td>
           <td>step</td>
           <td>integer</td>
@@ -179,7 +181,7 @@
           <td>from 1 to infinity</td>
           <td>indention in pixels</td>
         </tr>
-        <tr class="odd">
+        <tr>
           <td>5.</td>
           <td>zindex</td>
           <td>integer</td>
@@ -193,7 +195,7 @@
           <td>true or false</td>
           <td>panel fixed or not</td>
         </tr>
-        <tr class="odd">
+        <tr>
           <td>7.</td>
           <td>center</td>
           <td>boolean</td>
@@ -207,14 +209,13 @@
           <td>true or false</td>
           <td>picture position is fixed or not</td>
         </tr>
-        <tr class="odd">
+        <tr>
           <td>9.</td>
           <td>show</td>
           <td>boolean</td>
           <td>true or false</td>
           <td>show the picture when loading or not</td>
         </tr>
-        </tbody>
       </table>
     </div>
   </section>
@@ -230,9 +231,9 @@
             Example:
           </p>
         </div>
-						<pre>
-              $.pixlayout("img/picture.png", "div.wrapper");
-						</pre>
+        <pre>
+          $.pixlayout("img/picture.png", "div.wrapper");
+        </pre>
         <div class="lang_wrap" id="context_2">
           <h1>Displacement:</h1>
           <ol>
@@ -242,11 +243,11 @@
           </ol>
           <h1>Operations:</h1>
           <ol>
-            <li>Destroy (remove all html and css code pixLayout from the page) – the 'x' in the upper right corner.</li>
-            <li>Secure the panel – the icon in the upper right corner of the panel</li>
+            <li>Destroy (remove all html and css code pixLayout from the page) - the 'x' in the upper right corner.</li>
+            <li>Secure the panel - the icon in the upper right corner of the panel</li>
             <li>Quick reference: the question mark in the upper right corner of the panel</li>
-            <li>To roll up settings – arrow 'up' downwards of the panel</li>
-            <li>Show/hide the picture – the center button of the navigation bar or shift+e</li>
+            <li>To roll up settings - arrow 'up' downwards of the panel</li>
+            <li>Show/hide the picture - the center button of the navigation bar or shift+e</li>
           </ol>
         </div>
       </div>
@@ -255,7 +256,7 @@
   </section>
   <footer>
     <div class="footer" id="contacts">
-      Contacts: <a href="mailto:poly@polycreative.ru">e-mail</a>, <a href="http://vk.com/polyembrion">vk</a>
+      Contacts: <a href="mailto:poly@polycreative.ru">e-mail</a>, <a href="http://vk.com/polyembrion" target="_blank">vk</a>
     </div>
   </footer>
 </div>

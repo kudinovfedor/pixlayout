@@ -26,8 +26,8 @@ $ bower install --save git://github.com/kudinovfedor/pixlayout.git
 
 ### How to start?
 ```
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>;
+<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.pixlayout.min.js"></script>;
 <script type="text/javascript">;
   $(function(){
     $.pixlayout("/path_to_picture/picture.ext");

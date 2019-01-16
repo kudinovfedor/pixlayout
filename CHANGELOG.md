@@ -1,5 +1,9 @@
 # Versions:
 
+## 0.9.8 <sup>2016-10-18</sup>
+- jQuery 2.x and 3.x is now supported
+- jQuery below version 1.7 is no longer supported. If you need to support older versions, use [pixLayout ver. 0.9.7](https://github.com/kudinovfedor/pixlayout/tree/v0.9.7)
+
 ## 0.9.7 <sup>2012-10-11</sup>
 - we’ve added property “previous” that makes the layer picture flow-through (this function is not supported in IE<9)
 - the design of the checkboxes has been changed
